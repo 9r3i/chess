@@ -1,0 +1,314 @@
+/* load font */
+@font-face{font-family:'Consola';src:url('../fonts/consola.ttf');}
+@font-face{font-family:'Segoe UI Lite';src:url('../fonts/segoeuil.ttf');}
+@font-face{font-family:'Tahoma';src:url('../fonts/tahoma.ttf');}
+/* reset style */
+*{margin:0px;padding:0px;font-family:'Segoe UI Lite',Tahoma,Consola,consolas,monospace;font-size:16px;font-weight:normal;font-style:normal;color:#333;}
+*:focus{outline:none;}
+/* global style */
+body,select,input,textarea,table,td{margin:0px;padding:0px;font-size:16px !important;font-weight:normal;font-style:normal;color:#333;overflow-x:hidden;}
+body{background-color:#eed;overflow-x:hidden;padding:48px 0px 25px;-moz-user-select:none;-webkit-user-select:none;}
+a{text-decoration:none;color:#37b;}a:hover{color:#7b3;}
+em{font-style:italic;font-weight:inherit;}
+strong{font-weight:bold;font-style:inherit;}
+del{font-weight:inherit;font-style:inherit;}
+sup{line-height:11px;font-weight:inherit;font-style:inherit;}
+code{font-weight:inherit;font-style:inherit;color:#37b;}
+fieldset{border:1px solid #bbb;}
+legend{text-align:left;font-weight:bold;}
+hr{border:1px dotted #bbb;}
+p{margin:10px 0px;}
+ul,ol{padding-left:30px;}
+/* submit button */
+.submit{
+  padding:7px 13px;
+  border:0px none;
+  box-shadow:0px 0px 2px #555;
+  border-radius:2px;
+  transition:all 0.3s ease 0s;
+  background-color:#eed;
+  color:#333;
+  white-space:pre;
+}
+.submit i{color:#333;}
+.submit:hover{box-shadow:0px 0px 5px #555;background-color:#ddc;color:#333;}
+.submit:focus{box-shadow:0px 0px 9px #555;background-color:#ccb;color:#333;}
+.submit-blue{background-color:#59d;color:#fff;}
+.submit-blue:hover{background-color:#48c;color:#fff;}
+.submit-blue:focus{background-color:#37b;color:#fff;}
+.submit-red{background-color:#d55;color:#fff;}
+.submit-red:hover{background-color:#c44;color:#fff;}
+.submit-red:focus{background-color:#b33;color:#fff;}
+.submit-green{background-color:#9d5;color:#fff;}
+.submit-green:hover{background-color:#8c4;color:#fff;}
+.submit-green:focus{background-color:#7b3;color:#fff;}
+.submit-yellow{background-color:#dd5;color:#fff;}
+.submit-yellow:hover{background-color:#cc4;color:#fff;}
+.submit-yellow:focus{background-color:#bb3;color:#fff;}
+.submit-blue i,.submit-red i,.submit-green i,.submit-yellow i{color:#fff;}
+/* button */
+.button{
+  padding:7px 13px;
+  border:0px none;
+  box-shadow:0px 0px 2px #555;
+  border-radius:2px;
+  transition:all 0.3s ease 0s;
+  background-color:#eed;
+  color:#333;
+  white-space:pre;
+}
+.button i{color:#333;margin-right:5px;}
+.button:hover{box-shadow:0px 0px 5px #555;background-color:#ddc;color:#333;}
+.button:focus{box-shadow:0px 0px 9px #555;background-color:#ccb;color:#333;}
+.button-blue{background-color:#59d;color:#fff;}
+.button-blue:hover{background-color:#48c;color:#fff;}
+.button-blue:focus{background-color:#37b;color:#fff;}
+.button-red{background-color:#d55;color:#fff;}
+.button-red:hover{background-color:#c44;color:#fff;}
+.button-red:focus{background-color:#b33;color:#fff;}
+.button-green{background-color:#9d5;color:#fff;}
+.button-green:hover{background-color:#8c4;color:#fff;}
+.button-green:focus{background-color:#7b3;color:#fff;}
+.button-yellow{background-color:#dd5;color:#fff;}
+.button-yellow:hover{background-color:#cc4;color:#fff;}
+.button-yellow:focus{background-color:#bb3;color:#fff;}
+.button-blue i,.button-red i,.button-green i,.button-yellow i{color:#fff;}
+
+/* input and select */
+.textarea{border:1px solid #bbb;width:calc(100% - 12px);resize:vertical;height:100px;padding:5px;box-shadow:0px 0px 2px #ccc;}
+.input{border:1px solid #bbb;width:calc(100% - 12px);padding:5px;background-color:#fff;box-shadow:0px 0px 2px #ccc;}
+.select{border:1px solid #bbb;width:100%;padding:4px 5px;box-shadow:0px 0px 2px #ccc;}
+.textarea:focus{box-shadow:0px 0px 5px #ccc;}
+.input:focus{box-shadow:0px 0px 5px #ccc;}
+.select:focus{box-shadow:0px 0px 5px #ccc;}
+.input-front{
+  border:1px solid #bbb;
+  width:calc(100% - 12px);
+  padding:5px;
+  height:21px;
+  position:relative;
+  z-index:2;
+  opacity:0.01;
+  cursor:pointer;
+}
+.input-cover{
+  height:21px;
+  padding:5px;
+  border:1px solid #bbb;
+  box-shadow:0px 0px 2px #ccc;
+  margin-top:-33px;
+  position:relative;
+  z-index:1;
+  color:#999;
+}
+
+/* form */
+.form{max-width:250px;margin:10px auto;background-color:#fff;box-shadow:2px 2px 3px #ccc;padding:10px;}
+.form div{margin-bottom:10px;}
+.form-header{font-size:24px;text-align:center;}
+
+/* table */
+.table{border:1px solid #ccc;}
+.table thead tr{background-color:#555;}
+.table thead tr th{padding:7px 9px;vertical-align:middle;color:#fff;font-weight:bold;text-align:center;}
+.table td{padding:5px 7px;vertical-align:top;}
+.table tbody tr{background-color:#fdfded;}
+.table tbody tr:nth-child(2n){background-color:#ededdc;}
+
+
+
+/* --- CHESSBOARD EXTENSION --- */
+
+/* alert -- 9r3i */
+.alert-dialog{
+  position:fixed;
+  z-index:7;
+  width:0px;
+  height:0px;
+  top:50%;
+  left:50%;
+}
+.alert-bg{
+  position:fixed;
+  z-index:8;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  background-color:#fff;
+  opacity:0.3;
+}
+.alert-content{
+  position:absolute;
+  z-index:9;
+  width:200px;
+  height:auto;
+  background-color:#fff;
+  border:0px none;
+  border-radius:3px;
+  box-shadow:0px 0px 5px 5px #bbb;
+  margin:-100px 0px 0px -100px;
+  padding:0px;
+  overflow-x:hidden;
+  overflow-y:auto;
+  opacity:0.7;
+}
+.alert-header{
+  padding:10px;
+  font-weight:bold;
+  text-align:center;
+}
+
+
+/* draw -- 9r3i */
+.draw-dialog{
+  position:fixed;
+  z-index:7;
+  width:0px;
+  height:0px;
+  top:50%;
+  left:50%;
+}
+.draw-bg{
+  position:fixed;
+  z-index:8;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  background-color:#fff;
+  opacity:0.3;
+}
+.draw-content{
+  position:absolute;
+  z-index:9;
+  width:200px;
+  height:auto;
+  background-color:#fff;
+  border:0px none;
+  border-radius:3px;
+  box-shadow:0px 0px 5px 5px #bbb;
+  margin:-100px 0px 0px -100px;
+  padding:0px;
+  overflow-x:hidden;
+  overflow-y:auto;
+  opacity:0.7;
+}
+.draw-header:before{content:"Draw!";}
+.draw-header{
+  padding:10px;
+  font-weight:bold;
+  text-align:center;
+}
+
+/* checkmate -- 9r3i */
+.checkmate-dialog{
+  position:fixed;
+  z-index:7;
+  width:0px;
+  height:0px;
+  top:50%;
+  left:50%;
+}
+.checkmate-bg{
+  position:fixed;
+  z-index:8;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  background-color:#fff;
+  opacity:0.3;
+}
+.checkmate-content{
+  position:absolute;
+  z-index:9;
+  width:200px;
+  height:auto;
+  background-color:#fff;
+  border:0px none;
+  border-radius:3px;
+  box-shadow:0px 0px 5px 5px #bbb;
+  margin:-100px 0px 0px -100px;
+  padding:0px;
+  overflow-x:hidden;
+  overflow-y:auto;
+  opacity:0.7;
+}
+.checkmate-header:before{content:"Checkmate!";}
+.checkmate-header{
+  padding:10px;
+  font-weight:bold;
+  text-align:center;
+}
+
+/* pawn promotion -- 9r3i */
+.promotion-dialog{
+  position:fixed;
+  z-index:7;
+  width:0px;
+  height:0px;
+  top:50%;
+  left:50%;
+}
+.promotion-bg{
+  position:fixed;
+  z-index:8;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+  background-color:#fff;
+  opacity:0.3;
+}
+.promotion-content{
+  position:absolute;
+  z-index:9;
+  width:200px;
+  height:200px;
+  background-color:#fff;
+  border:0px none;
+  border-radius:3px;
+  box-shadow:0px 0px 5px 5px #bbb;
+  margin:-100px 0px 0px -100px;
+  padding:0px;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+.promotion-content a{
+  text-decoration:none;
+  cursor:pointer;
+}
+.promotion-header{
+  padding:10px;
+  font-weight:bold;
+  text-align:center;
+}
+.promotion-each:hover{background-color:#eed;}
+.promotion-each{
+  margin:0px 10px 5px 10px;
+  padding:10px 10px 10px 39px;
+  line-height:12px;
+  color:#333;
+  background-size:32px 32px;
+  background-repeat:no-repeat;
+  cursor:pointer;
+}
+.promotion-white-queen{background-image:url('../.neo/wq.png');}
+.promotion-white-bishop{background-image:url('../.neo/wb.png');}
+.promotion-white-knight{background-image:url('../.neo/wn.png');}
+.promotion-white-rock{background-image:url('../.neo/wr.png');}
+.promotion-black-queen{background-image:url('../.neo/bq.png');}
+.promotion-black-bishop{background-image:url('../.neo/bb.png');}
+.promotion-black-knight{background-image:url('../.neo/bn.png');}
+.promotion-black-rock{background-image:url('../.neo/br.png');}
+
+

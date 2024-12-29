@@ -1,0 +1,12 @@
+http://images.chesscomfiles.com/chess-themes/pieces/neo/300/wk.png
+http://images.chesscomfiles.com/chess-themes/pieces/neo/300/wq.png
+http://images.chesscomfiles.com/chess-themes/pieces/neo/300/wb.png
+http://images.chesscomfiles.com/chess-themes/pieces/neo/300/wn.png
+http://images.chesscomfiles.com/chess-themes/pieces/neo/300/wr.png
+http://images.chesscomfiles.com/chess-themes/pieces/neo/300/wp.png
+http://images.chesscomfiles.com/chess-themes/pieces/neo/300/bk.png
+http://images.chesscomfiles.com/chess-themes/pieces/neo/300/bq.png
+http://images.chesscomfiles.com/chess-themes/pieces/neo/300/bb.png
+http://images.chesscomfiles.com/chess-themes/pieces/neo/300/bn.png
+http://images.chesscomfiles.com/chess-themes/pieces/neo/300/br.png
+http://images.chesscomfiles.com/chess-themes/pieces/neo/300/bp.png
