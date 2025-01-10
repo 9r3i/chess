@@ -32,7 +32,7 @@ just sample of chess game i made
 ```
 
 # sample server
-requires: [AI Console System](https://github.com/9r3i/ai) and extension ```ws``` for websocket and ```sdb``` for database.
+requires: [AI Console System](https://github.com/9r3i/ai) and its library such as ```ws``` for websocket and ```sdb``` for database.
 ```php
 /* define root directory */
 defined('SERVER_ROOT') or define('SERVER_ROOT',str_replace('\\','/',__DIR__).'/');
