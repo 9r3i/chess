@@ -2,7 +2,7 @@
 just sample of chess game i made
 
 
-# sample
+# sample client
 ```html
 <!DOCTYPE html><html lang="en-US" dir="ltr"><head>
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -29,4 +29,26 @@ just sample of chess game i made
 <div id="index"></div>
 </body></html>
 <!-- html index file for chessX -->
+```
+
+# sample server
+requires: [AI Console System](https://github.com/9r3i/ai) and extension ```ws``` for websocket and ```sdb``` for database.
+```php
+/* define root directory */
+defined('SERVER_ROOT') or define('SERVER_ROOT',str_replace('\\','/',__DIR__).'/');
+
+/* set ws cli directory */
+defined('WS_CLI_DIR') or define('WS_CLI_DIR',SERVER_ROOT);
+
+/* set sdb cli directory */
+defined('SDB_CLI_DIR') or define('SDB_CLI_DIR',SERVER_ROOT.'sdb/');
+
+/* initialize websocket */
+new ws(
+  9333, /* websocket server port */
+  3     /* limit socket buffer size in kb */
+);
+
+
+
 ```
